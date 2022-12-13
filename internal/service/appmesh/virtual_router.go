@@ -65,8 +65,7 @@ func ResourceVirtualRouter() *schema.Resource {
 						"listener": {
 							Type:     schema.TypeList,
 							Required: true,
-							MinItems: 1,
-							MaxItems: 1,
+							MinItems: 0,
 							Elem: &schema.Resource{
 								Schema: map[string]*schema.Schema{
 									"port_mapping": {
